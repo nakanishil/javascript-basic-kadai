@@ -1,10 +1,11 @@
-// HTML要素をIDで取得
-const mainText = document.getElementById('text');
-const clickBtn = document.getElementById('btn') ;
+// html要素をidで取得
+const btn = document.getElementById('btn')
 
-// 非同期処理　ボタンがクリックされた２秒後に処理を実行
-clickBtn.addEventListener('click', () => {
+const text =document.getElementById('text');
+// btnがクリックされたときにイベント処理を実行
+btn.addEventListener('click', () => {
+  // id textの書き換え
   setTimeout(() => {
-    mainText.textContent = 'ボタンをクリックしました'
-  })
-})
+    text.textContent = 'ボタンをクリックしました'
+  }, 2000)
+});
